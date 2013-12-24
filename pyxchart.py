@@ -1,7 +1,12 @@
-# -*- coding: utf-8 -*-
-#/usr/bin/python
-# LGPL2
-# made by tkrasuski@gazete.pl
+#!/usr/bin/env python
+"""
+This module is simple python wraper to the Xcharts library.
+
+"""
+# Author: Tomek Krasuski  <tkrasuski at gazeta dot pl>
+# Copyright (c) 2013 Tomek Krasuski
+# License: LGPL2
+
 import numbers
 import decimal
 
