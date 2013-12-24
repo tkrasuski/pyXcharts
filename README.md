@@ -12,7 +12,7 @@ Before you start, you need add some additional libraries for your project:
 
 ### My first chart
 
-Ok, looks like we�re ready. Let�s create our first chart. With your favorit editor create script including code below.
+Ok, looks like we're ready. Let's create our first chart. With your favorit editor create script including code below.
 
 
     import pyxchart as px
@@ -26,7 +26,7 @@ Ok, looks like we�re ready. Let�s create our first chart. With your favorit 
     chart.create() # generate chart
     chartFigure = chart.getAsFunction() # contains chart code for use in the view file
 
-Now, depending on framework you using, you should place some code in the view file. This example shows how to use with the web2py framework.
+Now, depending on framework you using, you should place some code in the view file. This example shows how to use pyXcharts with the web2py framework.
 
 Your controler file:
     
@@ -45,6 +45,6 @@ Your controler file:
 Your view file:
 
     <figure style="width: 400px; height: 300px;" id="Drinks"></figure>
-    <script> {{=msg}} </script>
+    <script> {{=msg}} ;</script>
 
 For more details about how to use pyXcharts with web2py take a look at "web2py how to"
