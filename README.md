@@ -1,7 +1,7 @@
-## pyXcharts – pythonic wraper to the Xcharts
+## pyXcharts ï¿½ pythonic wraper to the Xcharts
 
 Xcharts is a java script library to creating charts for your web page. It is really simple and handy, however mixing java script, jQuery and python is not very pleasant.
-So, if you writing python web application and you like Xcharts  you can make your work much easier using pyXchart.
+So, if you're writing python web application and you like Xcharts  you can make your work much easier using pyXchart.
 
 ### Before you start
 
@@ -12,7 +12,7 @@ Before you start, you need add some additional libraries for your project:
 
 ### My first chart
 
-Ok, looks like we’re ready. Let’s create our first chart. With your favorit editor create script including code below.
+Ok, looks like weï¿½re ready. Letï¿½s create our first chart. With your favorit editor create script including code below.
 
 
     import pyxchart as px
