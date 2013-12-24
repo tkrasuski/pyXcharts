@@ -89,6 +89,8 @@ class chart(object):
     def validate(self):
         if self.xScale not in ('ordinal','linear','time','exponential'):
             raise wrongScaleException('Wrong scale.')
+        if self.yScale not in ('ordinal','linear','time','exponential'):
+            raise wrongScaleException('Wrong scale.')
         if not isinstance(self.xMin,numbers.Number) and self.xMin!=None:
             raise wrongValue('xMin must be a number.')
         if not isinstance(self.xMax ,numbers.Number) and self.xMax !=None:
@@ -113,11 +115,14 @@ class chart(object):
         self.__compdata += dataItem
         
     def addItems(self, data):
-        if len(data)!=0:
+        if len(__data)!=0:
             for d in data:
                 self.addItem(d)
-            
-    
+    def addCompItems(self, data):
+        if len(__compdata)!=0:
+            for d in data:
+                self.addCompItem(d)
+                
         
     def create(self):
         self.validate()
