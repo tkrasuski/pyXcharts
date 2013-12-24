@@ -1,6 +1,7 @@
 ## pyXcharts – pythonic wraper to the Xcharts
 
-Xcharts is a java script library to creating charts for your web page. It is really simple and handy, however mixing java script, jQuery and python is not very pleasant. So, if you writing python web application and you like Xcharts  you can make your work much easier using pyXchart.
+Xcharts is a java script library to creating charts for your web page. It is really simple and handy, however mixing java script, jQuery and python is not very pleasant.
+So, if you writing python web application and you like Xcharts  you can make your work much easier using pyXchart.
 
 ### Before you start
 
@@ -17,26 +18,26 @@ Ok, looks like we’re ready. Let’s create our first chart. With your favorit edit
     import pyxchart as px
 
     chart = px.chart() # creates instance of chart object
-    a = {‘x’:’Cola’,’y’:30} # first data series
-    b = {‘x’:’Beer’,’y’:70} # second data series
+    a = {'x':'Cola','y':30} # first data series
+    b = {'x':'Beer','y':70} # second data series
     chart.addItem(a) # adding first data series to the chart
     chart.addItem(b)
-    chart.name=’Drinks’ # name for report and HTML class ID
+    chart.name='Drinks' # name for report and HTML class ID
     chart.create() # generate chart
     chartFigure = chart.getAsFunction() # contains chart code for use in the view file
 
-Now, depending on framework you using, you should place some code in the view file. This example is shows how to use with the web2py framework.
+Now, depending on framework you using, you should place some code in the view file. This example shows how to use with the web2py framework.
 
 Your controler file:
     
     import pyxchart as px
 
     chart = px.chart() # creates instance of chart object
-    a = {‘x’:’Cola’,’y’:30} # first data series
-    b = {‘x’:’Beer’,’y’:70} # second data series
+    a = {'x':'Cola','y':30} # first data series
+    b = {'x':'Beer','y':70} # second data series
     chart.addItem(a) # adding first data series to the chart
     chart.addItem(b)
-    chart.name=’Drinks’ # name for report and HTML class ID
+    chart.name='Drinks' # name for report and HTML class ID
     chart.create() # generate chart
     chartFigure = chart.getAsFunction()
     return dict(msg=XML(chartFigure))
