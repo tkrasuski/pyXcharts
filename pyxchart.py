@@ -115,11 +115,12 @@ class chart(object):
         self.__compdata += dataItem
         
     def addItems(self, data):
-        if len(__data)!=0:
+        if len(data)>0:
             for d in data:
                 self.addItem(d)
+                
     def addCompItems(self, data):
-        if len(__compdata)!=0:
+        if len(data)>0:
             for d in data:
                 self.addCompItem(d)
                 
