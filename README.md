@@ -48,3 +48,7 @@ Your view file:
     <script> {{=msg}} ;</script>
 
 For more details about how to use pyXcharts with web2py take a look at "web2py how to"
+
+### Live Demo
+
+iframe:http://sybir6502.pythonanywhere.com/pyxchart/default/index
