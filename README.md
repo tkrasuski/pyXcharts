@@ -31,15 +31,15 @@ Now, depending on framework you using, you should place some code in the view fi
 Your controler file:
     
     import pyxchart as px
-
-    chart = px.chart() # creates instance of chart object
-    a = {'x':'Cola','y':30} # first data series
-    b = {'x':'Beer','y':70} # second data series
-    chart.addItem(a) # adding first data series to the chart
-    chart.addItem(b)
-    chart.name='Drinks' # name for report and HTML class ID
-    chart.create() # generate chart
-    chartFigure = chart.getAsFunction()
+    def index():
+    	chart = px.chart() # creates instance of chart object
+    	a = {'x':'Cola','y':30} # first data series
+    	b = {'x':'Beer','y':70} # second data series
+    	chart.addItem(a) # adding first data series to the chart
+    	chart.addItem(b)
+    	chart.name='Drinks' # name for report and HTML class ID
+    	chart.create() # generate chart
+    	chartFigure = chart.getAsFunction()
     return dict(msg=XML(chartFigure))
 
 Your view file:

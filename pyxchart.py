@@ -38,8 +38,8 @@ class chart(object):
     yScale = 'ordinal'
     xMin = None
     xMax = None
-    yMin = None
-    yMax = None
+    yMin = 0
+    yMax = 100
     chartType = 'bar'
     cChartType = 'line'
     figure = ''
@@ -52,6 +52,8 @@ class chart(object):
       "xScale": "%s",
       "yScale": "%s",
       "type": "%s",
+      "yMin": "%s",
+      "yMax": "%s",
       "%s": [
         {
           "className": ".%s",
@@ -128,9 +130,9 @@ class chart(object):
     def create(self):
         self.validate()
         dat = self.__datatmp % self.__data
-        she = self.__shell % (self.xScale, self.yScale, self.chartType, 'main', self.name, dat)
+        she = self.__shell % (self.xScale, self.yScale, self.chartType,self.yMin, self.yMax, 'main', self.name, dat)
         if len(self.__compdata)>0:
-            shc = self.__compshell % (self.cname, self.cChartType , self.__compdata)
+            shc = self.__compshell % (self.cname, self.cChartType, self.__compdata)
             self.figure=she+shc
         else:
             self.figure = she+'}'
@@ -150,13 +152,3 @@ class chart(object):
         
     def clearCompData(self):
         self.__compdata=None
-    
-    
-    
-
-
-
-
-
-
-
