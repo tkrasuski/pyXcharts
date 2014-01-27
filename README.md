@@ -51,4 +51,4 @@ For more details about how to use pyXcharts with web2py take a look at "web2py h
 
 ### Live Demo
 
-iframe:http://sybir6502.pythonanywhere.com/pyxchart/default/index
+embed:http://sybir6502.pythonanywhere.com/pyxchart/default/index
