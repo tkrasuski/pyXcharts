@@ -52,5 +52,5 @@ For more details about how to use pyXcharts with web2py take a look at "web2py h
 ### Live Demo
 
 
-Demo (http://bit.ly/1JphP05)
+[Demo](http://bit.ly/1JphP05)
 
