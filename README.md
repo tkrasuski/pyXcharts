@@ -6,8 +6,8 @@ So, if you're writing python web application and you like Xcharts  you can make 
 ### Before you start
 
 Before you start, you need add some additional libraries for your project:
-* Download and include [D3.js](http://d3js.org/) on your page (Xcharts uses it).
-* Download and include [xcharts.js and xcharts.css](http://tenxer.github.io/xcharts/) on your page.
+* Download and include [D3.js](http://d3js.org/) in your page (Xcharts uses it).
+* Download and include [xcharts.js and xcharts.css](http://tenxer.github.io/xcharts/) in your page.
 * Download [pyXcharts](https://github.com/tkrasuski/pyXcharts) and place in accessible folder.
 
 ### My first chart
