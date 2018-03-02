@@ -49,8 +49,4 @@ Your view file:
 
 For more details about how to use pyXcharts with web2py take a look at "web2py how to"
 
-### Live Demo
-
-
-[Demo](http://bit.ly/1JphP05)
 
